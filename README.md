@@ -1,6 +1,6 @@
 # Helpjuice Editor
 
-> This is a Notion-like editor, but only the H1 heading component. So it’s not much of an editor, but rather an app that lets you write anywhere and convert your content into H1.
+> This minimalist editor offers a Notion-like interface specifically designed for creating and styling H1 headings with just the "/ + 1" command. Write your content seamlessly and elevate it into impactful, bold H1 titles with this simple keystroke. It's an ideal tool for quickly generating standout headings with ease, streamlining the process without the complexity of a comprehensive editor.
 
 ## Built With
 
