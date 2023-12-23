@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://helpjuice-editor.vercel.app/)
 
 ## Getting Started
 
@@ -71,7 +71,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--Hat tip to Helpjuice for inspiration  as this is part of their frontend project test.
+-Hat tip to Helpjuice for inspiration as this is part of their frontend project test.
 
 ## 📝 License
 
