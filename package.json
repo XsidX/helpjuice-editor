@@ -7,8 +7,7 @@
     "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -33,7 +32,6 @@
     "eslint-plugin-import": "^2.26.0",
     "fetch-mock": "^9.11.0",
     "file-loader": "^1.1.6",
-    "gh-pages": "^4.0.0",
     "hint": "^7.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-inline-svg-plugin": "^2.3.0",
