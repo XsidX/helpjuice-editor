@@ -3,12 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>helpjuice-editor</title>
   </head>
-  <body>
+  <body class="p-4">
     <header>
-      <h1 class="text-red-500">hello hello</h1>
+      <nav class="flex justify-between text-gray-500/75 text-sm">
+        <ul class="flex gap-2">
+          <li><i class="fa fa-angle-double-right mr-2"></i></li>
+          <li><a href="#main"><span class="hover:underline underline-offset-2">Main</span></a></li>
+          <li class="max-sm:hidden">/</li>
+          <li class="hover:underline underline-offset-2 max-sm:hidden"><a href="#getting-started">Getting started</li>
+          <li class="max-sm:hidden">/</li>
+          <li class="hover:underline underline-offset-2 max-sm:hidden"><a href="#project">Front-end developer test proje...</li>
+        </ul>
+        <ul class="flex gap-2">
+          <li>
+            <button class="flex items-center gap-2">
+              <img src="./assets/svgs/lock.svg" alt="lock icon">
+              <span>Editing</span>
+            </button>
+          </li>
+          <li>|</li>
+          <li>
+            <button class="flex gap-2 items-center text-blue-600 font-bold">
+              <span>Publish Space</span>
+              <img src="./assets/svgs/arrow-down.svg" alt="arrow down icon">
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <section class="content" id="content"></section>
+    <main class="mt-12 w-full max-w-4xl mx-auto space-y-6" id="content">
+      <section>
+        <div class=" flex justify-between items-center border border-gray-200 p-2 rounded-md text-gray-500/75 shadow-sm">
+          <ul class="flex items-center gap-2">
+            <li><span class="bg-green-500/20 p-2 font-bold text-green-700 rounded">P</span></li>
+            <li>|</li>
+            <li class="flex gap-2">
+              <img src="./assets/svgs/clock.svg" alt="clock icon" width="16px" height="16px">
+              <span>0 min</span>
+            </li>
+            <li>|</li>
+            <li>
+              <div class="h-7 w-7 bg-red-400 rounded-full flex items-center justify-center">
+                <img src="./assets/img/avatar.png" alt="bunny avatar" width="12px" height="12px">
+              </div>
+            </li>
+            <li>|</li>
+            <li class="flex gap-2">
+              <img src="./assets/svgs/arrow-slant-left.svg" alt="arrow slant left icon">
+              <span>0</span>
+            </li>
+          </ul>
+          <ul class="flex items-center gap-2 max-sm:hidden">
+            <li>
+              <button>
+                <img src="./assets/svgs/check-circle.svg" alt="check circle icon">
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/svgs/cloud.svg" alt="check circle icon">
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="./assets/svgs/dots-horizontal.svg" alt="horizontal dots icon">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="space-y-4">
+          <div class=" border-b border-gray-200 py-2">
+            <h1 class="text-4xl font-bold">Front-end developer test project</h1>
+          </div>
+          <p class="text-gray-700">
+            Your goal is to make a page that looks exactly like this one, and has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter.
+          </p>
+        </div>
+      </section>
+
+      <section id="editor-container" class="h-[calc(100vh-316px)] overflow-auto pb-6"></section>
+    </main>
   </body>
 </html>

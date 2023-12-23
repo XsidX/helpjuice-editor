@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[contenteditable="true"]:empty:before {
+    content: attr(data-placeholder);
+    pointer-events: none;
+    display: block;
+    color: rgb(107 114 128 / 0.75);
+}

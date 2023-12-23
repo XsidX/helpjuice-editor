@@ -1,6 +1,7 @@
 /* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 
 module.exports = {
   mode: 'development',
@@ -19,6 +20,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new HtmlWebpackInlineSVGPlugin(),
   ],
   output: {
     filename: '[name].js',
@@ -35,13 +37,13 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
-        test: /\.(gif|png|jpe?g)$/,
+        test: /\.(gif|png|jpeg|jpg|svg)$/i,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/img/',
+              outputPath: 'assets/**/*',
             },
           },
         ],
